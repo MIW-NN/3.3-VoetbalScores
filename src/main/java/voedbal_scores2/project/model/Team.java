@@ -12,51 +12,31 @@ public class Team {
     private int totalGoals;
     private int totalGoalsConceded  ;
 
-    public Team(String teamName, int totalContestPoints, int totalGoals, int totalGoalsConceded) {
-        this.teamName = teamName;
-        this.totalContestPoints = totalContestPoints;
-        this.totalGoals = totalGoals;
-        this.totalGoalsConceded = totalGoalsConceded;
-    }
 
     public Team(String teamName) {
-        this(teamName, DEFAULT_CONTEST_POINTS, DEFAULT_GOALS,DEFAULT_GOALS_CONCEDED);
     }
 
-    public Team() {
-        this(DEFAULT_TEAM_NAME);
-    }
+    public Team() { }
 
     public int getGoalBalance() {
-        return totalGoals - totalGoalsConceded;
+return 0;
     }
 
     public void printStatusTeam() {
-        System.out.printf("Het team %s heeft %d wedstrijdpunten en een doelsaldo van %d\n", teamName, totalContestPoints, this.getGoalBalance());
-    }
-
-    public String getTeamName() {
-        return teamName;
-    }
-
-    public void setTeamName(String teamName) {
-        this.teamName = teamName;
     }
 
     public int getTotalPoints() {
-        return totalContestPoints;
+        return 0;
     }
 
     public void setTotalPoints(int wedstrijdPunten) {
-        this.totalContestPoints = wedstrijdPunten;
     }
 
     public int getTotalGoals() {
-        return totalGoals;
+        return 0;
     }
 
     public void setTotalGoals(int totalGoals) {
-        this.totalGoals = totalGoals;
     }
 
     public int getTotalGoalsConceded() {
